@@ -1,3 +1,6 @@
+@use "./utils/vars" as *;
+@use "./utils/mixsins" as *;
+@use "./utils/general";
 @use "./components/header";
 @use "./components/logo";
 @use "./components/contact";
@@ -10,5 +13,3 @@
 @use "./components/modal";
 @use "./components/portfolio";
 @use "./components/nav";
-@use "./utils/vars";
-@use "./utils/general";
