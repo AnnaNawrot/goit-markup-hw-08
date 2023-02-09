@@ -19,6 +19,35 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
+  @media screen and (min-width: 480px) {
+    & {
+      width: 448px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      width: 768 px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    & {
+      width: 1200px;
+    }
+  }
+
+  @include mq(phone) {
+    width: 448px;
+  }
+
+  @include mq(tablet) {
+    width: 768px;
+  }
+
+  @include mq(desktop) {
+    width: 1200px;
+  }
 }
 
 .section {
