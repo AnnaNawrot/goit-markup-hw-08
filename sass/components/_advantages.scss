@@ -1,9 +1,12 @@
 .advantages {
   margin-top: 94px;
+
   &__list {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    // justify-content: space-between;
+    // align-items: center;
   }
   &__item {
     width: 270px;
