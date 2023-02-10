@@ -1,9 +1,13 @@
 .advantages {
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  // &__list {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  // }
 
   &__item {
     width: 450px;
