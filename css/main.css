@@ -306,8 +306,9 @@ button {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--secondary-txt-color);
-  width: 270px;
+  width: 450px;
   text-align: left;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .tile {
