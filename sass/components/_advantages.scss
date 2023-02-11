@@ -3,12 +3,6 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  // &__list {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   justify-content: center;
-  // }
-
   &__item {
     width: 450px;
     text-align: center;
@@ -28,8 +22,6 @@
       }
     }
   }
-
-  @include tablet;
 }
 
 .tile {
