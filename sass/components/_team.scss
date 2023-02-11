@@ -1,6 +1,10 @@
-.team {
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: var(--third-bg-color);
-  &__list {
+
+  @include desktop {
     display: flex;
     justify-content: space-between;
   }
@@ -66,12 +70,5 @@
       background-color: var(--brand-color);
       fill: var(--primary-bg-color);
     }
-  }
-}
-
-// smartphone
-@media screen and (max-width: 768px) {
-  .card {
-    padding-bottom: 24px;
   }
 }

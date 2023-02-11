@@ -173,13 +173,17 @@ button {
   display: flex;
   justify-content: space-between;
 }
-
-.photo {
+@media screen and (max-width: 1200px) {
+  .offer__list {
+    display: none;
+  }
+}
+.offer__list .photo {
   display: flex;
   flex-direction: column;
   position: relative;
 }
-.photo__description {
+.offer__list .photo__description {
   font-weight: 700;
   font-size: 14px;
   line-height: 1 14;
@@ -195,6 +199,11 @@ button {
   height: 70px;
   position: absolute;
   top: 224px;
+}
+@media screen and (max-width: 1200px) {
+  .offer__list .photo {
+    display: none;
+  }
 }
 
 .advantages {
@@ -265,12 +274,17 @@ button {
   }
 }
 
-.team {
-  background-color: var(--third-bg-color);
-}
 .team__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--third-bg-color);
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .card {
@@ -332,11 +346,6 @@ button {
   fill: var(--primary-bg-color);
 }
 
-@media screen and (max-width: 768px) {
-  .card {
-    padding-bottom: 24px;
-  }
-}
 .customers {
   display: flex;
   justify-content: center;
