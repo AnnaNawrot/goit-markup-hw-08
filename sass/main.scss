@@ -1,5 +1,5 @@
-@use "./utils/vars" as *;
 @use "./utils/mixsins" as *;
+@use "./utils/vars";
 @use "./utils/general";
 @use "./components/header";
 @use "./components/logo";
