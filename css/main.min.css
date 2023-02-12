@@ -25,7 +25,7 @@ img {
   height: auto;
 }
 .container {
-  width: 100%;
+  /* width: 100%; */
   max-width: 480px;
   margin: 0 auto;
   padding: 0 15px;
@@ -54,7 +54,18 @@ img {
   }
 }
 .offer__title {
-  display: none;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  .offer__title {
+    display: none;
+  }
 }
 
 .section__title {
@@ -257,12 +268,25 @@ button {
   .advantages__item {
     max-width: 270px;
   }
+
+  @media screen and (min-width: 1200px) {
+    .advantages__item:not(:last-child) {
+      gap: 30px;
+    }
+  }
 }
 @media screen and (min-width: 768px) {
   .advantages__item {
     max-width: 354px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .advantages__item:not(:nth-child(even)) {
+    gap: 30px;
+  }
+}
+
 .tile {
   background-color: var(--third-bg-color);
   border-style: none;
