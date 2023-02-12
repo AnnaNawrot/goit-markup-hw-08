@@ -373,19 +373,19 @@ button {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   max-width: 450px;
-  height: 622px;
+  height: auto;
   background: var(--primary-bg-color);
 }
 @media screen and (min-width: 1200px) {
   .card {
     max-width: 270px;
-    max-height: 168px;
+    /* max-height: 168px; */
   }
 }
 @media screen and (min-width: 768px) {
   .card {
     max-width: 354px;
-    max-height: 536px;
+    /* max-height: 536px; */
   }
 }
 .card__description {
