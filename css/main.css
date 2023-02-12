@@ -346,6 +346,10 @@ button {
   padding-bottom: 50px;
 }
 
+.team {
+  background-color: var(--third-bg-color);
+}
+
 .team__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -372,13 +376,24 @@ button {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  max-width: 450px;
+  height: 622px;
+  background: var(--primary-bg-color);
+}
+@media screen and (min-width: 1200px) {
+  .card {
+    max-width: 270px;
+    max-height: 168px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card {
+    max-width: 354px;
+    max-height: 536px;
+  }
 }
 .card__description {
-  padding: 30px 0;
-  width: 270px;
-  height: 168px;
-  background: var(--third-txt-color);
-  border-radius: 0px 0px 4px 4px;
+  padding: 30px;
 }
 .card__name {
   font-weight: 500;
@@ -395,10 +410,6 @@ button {
   color: var(--secondary-txt-color);
   text-align: center;
   margin-bottom: 16px;
-}
-
-.figcaption {
-  background-color: var(--primary-bg-color);
 }
 
 .social-list {

@@ -7,6 +7,10 @@
   padding-bottom: 50px;
 }
 
+.team {
+  background-color: (var(--third-bg-color));
+}
+
 .team__list {
   display: flex;
   flex-wrap: wrap;
@@ -23,12 +27,22 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  max-width: 450px;
+  height: 622px;
+  background: var(--primary-bg-color);
+
+  @include desktop {
+    max-width: 270px;
+    max-height: 168px;
+  }
+
+  @include tablet {
+    max-width: 354px;
+    max-height: 536px;
+  }
+
   &__description {
-    padding: 30px 0;
-    width: 270px;
-    height: 168px;
-    background: var(--third-txt-color);
-    border-radius: 0px 0px 4px 4px;
+    padding: 30px;
   }
   &__name {
     font-weight: 500;
@@ -46,10 +60,6 @@
     text-align: center;
     margin-bottom: 16px;
   }
-}
-
-.figcaption {
-  background-color: var(--primary-bg-color);
 }
 
 .social-list {
