@@ -30,6 +30,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include desktop {
+    width: 270px;
+  }
+
+  @include tablet {
+    width: 354px;
+  }
 
   &__title {
     font-weight: 700;
