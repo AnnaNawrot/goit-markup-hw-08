@@ -9,13 +9,18 @@
 
 .customers {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 0;
-  padding: 0;
-  width: 1170px;
-  &__item:not(:last-child) {
-    margin-right: 30px;
+  gap: 30px;
+
+  @include tablet {
+    flex-basis: calc((100% - 2 * 30px) / 3);
   }
+
+  @include desktop {
+    flex-wrap: nowrap;
+  }
+
   &__link {
     display: flex;
     justify-content: center;
