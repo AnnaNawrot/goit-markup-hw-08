@@ -13,8 +13,12 @@
   justify-content: center;
   gap: 30px;
 
-  @include tablet {
-    flex-basis: calc((100% - 2 * 30px) / 3);
+  &__item {
+    flex-basis: calc(100% / 2 - 30px);
+
+    @include tablet {
+      flex-basis: calc(100% / 3 - 30px);
+    }
   }
 
   @include desktop {
