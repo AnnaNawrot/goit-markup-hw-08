@@ -394,6 +394,7 @@ button {
 }
 .card__description {
   padding: 30px;
+  background-color: var(--primary-bg-color);
 }
 .card__name {
   font-weight: 500;
