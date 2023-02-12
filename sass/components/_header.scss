@@ -1,7 +1,19 @@
 .header {
   border-bottom: 1px solid #ececec;
+  position: relative;
+  min-height: 60px;
+  background-color: var(--primary-bg-color);
+  z-index: 1;
+  @include tablet {
+    min-height: 80px;
+  }
+  @include desktop {
+    min-height: 80px;
+  }
+
   &__container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 
