@@ -6,21 +6,15 @@
 
   &__item {
     max-width: 450px;
-  }
-
-  @include desktop {
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
-    &__item {
-      max-width: 270px;
+    @include tablet {
+      max-width: 354px;
     }
-  }
 
-  @include tablet {
-    gap: 30px;
-    &__item {
-      flex-basis: calc((100% - 1 * 30px) / 2);
+    @include desktop {
+      max-width: 270px;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
     }
   }
 }
@@ -44,6 +38,13 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     text-align: center;
+    @include tablet {
+      text-align: left;
+    }
+
+    @include desktop {
+      text-align: left;
+    }
   }
 
   &__description {
@@ -51,21 +52,7 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--secondary-txt-color);
-    width: 450px;
     text-align: left;
     margin-bottom: 30px;
-  }
-
-  @include desktop {
-    width: 270px;
-
-    &__title {
-      text-align: left;
-    }
-  }
-
-  @include tablet {
-    width: 354px;
-    text-align: left;
   }
 }
