@@ -545,12 +545,57 @@ button {
   background-color: var(--secondary-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.wraper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer__cta {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--third-txt-color);
+  margin-bottom: 20px;
+}
+
+.wraper {
+  display: block;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .wraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    text-align: left;
+  }
+}
+
+.footer-contact {
+  margin-bottom: 60px;
 }
 
 .footer-contacts__item {
@@ -574,23 +619,12 @@ button {
   margin-top: 20px;
 }
 
-.footer-contact {
-  margin-right: 70px;
-}
-
 .footer-socials {
-  padding-top: 12px;
-  margin-right: 70px;
-}
-
-.cta {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1 14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--third-txt-color);
-  margin-bottom: 20px;
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 78px;
 }
 
 .socials {
@@ -611,6 +645,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-right: 10px;
 }
 .socials__link {
   display: -webkit-box;
@@ -638,12 +673,25 @@ button {
 
 .footer-subscription {
   padding-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .subscription {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.subscription__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 .subscription__icon {
   fill: var(--primary-bg-color);

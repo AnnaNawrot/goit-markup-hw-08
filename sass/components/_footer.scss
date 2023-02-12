@@ -2,10 +2,42 @@
   background-color: var(--secondary-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__cta {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1 14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--third-txt-color);
+    margin-bottom: 20px;
+  }
 }
 
 .wraper {
-  display: flex;
+  display: block;
+
+  text-align: center;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: left;
+  }
+}
+.footer-contact {
+  margin-bottom: 60px;
+  // margin-right: 70px;
 }
 
 .footer-contacts {
@@ -31,23 +63,11 @@
   }
 }
 
-.footer-contact {
-  margin-right: 70px;
-}
-
+// JOIN US - social media
 .footer-socials {
-  padding-top: 12px;
-  margin-right: 70px;
-}
-
-.cta {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1 14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--third-txt-color);
-  margin-bottom: 20px;
+  margin-bottom: 60px;
+  display: flex;
+  margin-right: 78px;
 }
 
 .socials {
@@ -60,6 +80,7 @@
 
   &__item {
     display: flex;
+    margin-right: 10px;
   }
 
   &__link {
@@ -82,12 +103,20 @@
   }
 }
 
+// NEWSLETTER
 .footer-subscription {
   padding-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .subscription {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
   &__icon {
     fill: var(--primary-bg-color);
     margin-right: 28px;
