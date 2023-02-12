@@ -467,10 +467,12 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 .customers__item {
-  -ms-flex-preferred-size: calc(50% - 30px);
-      flex-basis: calc(50% - 30px);
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 768px) {
   .customers__item {
@@ -494,7 +496,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--icons-bg-color);
   border-radius: 4px;
@@ -507,6 +509,16 @@ button {
   background-color: var(--primary-bg-color);
   fill: var(--brand-color);
   border: 1px solid var(--brand-color);
+}
+@media screen and (min-width: 768px) {
+  .customers__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers__link {
+    width: 170px;
+  }
 }
 
 .footer {
