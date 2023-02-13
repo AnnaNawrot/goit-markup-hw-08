@@ -1,26 +1,39 @@
 .header {
   border-bottom: 1px solid #ececec;
   position: relative;
-  min-height: 60px;
+  height: 60px;
   background-color: var(--primary-bg-color);
   z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+
   @include tablet {
-    min-height: 80px;
+    height: 80px;
     margin-left: 15px;
     margin-right: 15px;
-  }
-  @include desktop {
-    min-height: 80px;
+    justify-content: center;
   }
 
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    @include tablet {
+      margin-top: 21px;
+      margin-bottom: 21px;
+    }
   }
 
-  &__logo {
-    padding-top: 24px;
-    padding-bottom: 25px;
-  }
+  // &__logo {
+  //   padding-top: 16px;
+  //   padding-left: 15px;
+
+  //   @include tablet {
+  //     padding-top: 26px;
+  //     padding-left: 15px;
+  //   }
+  // }
 }
