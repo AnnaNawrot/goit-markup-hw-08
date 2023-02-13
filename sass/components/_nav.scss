@@ -8,6 +8,10 @@
     margin-left: 83px;
     margin-right: 101px;
   }
+
+  @include desktop {
+    margin-right: 345px;
+  }
   @media screen and (max-width: 767px) {
     display: none;
   }

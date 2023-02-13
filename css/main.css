@@ -1005,7 +1005,6 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 12px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1109,6 +1108,11 @@ button {
 .subscription__input:hover {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+@media screen and (min-width: 1200px) {
+  .subscription__input {
+    margin-right: 12px;
+  }
 }
 
 .backdrop {
@@ -1601,6 +1605,11 @@ textarea {
   .nav {
     margin-left: 83px;
     margin-right: 101px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav {
+    margin-right: 345px;
   }
 }
 @media screen and (max-width: 767px) {
