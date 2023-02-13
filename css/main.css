@@ -631,6 +631,7 @@ button {
   .footer {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    padding-bottom: 0;
   }
 }
 .footer__cta {
