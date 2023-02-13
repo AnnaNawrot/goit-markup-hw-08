@@ -528,13 +528,11 @@ button {
   gap: 30px;
 }
 .customers__item {
-  -ms-flex-preferred-size: calc(50% - 30px);
-      flex-basis: calc(50% - 30px);
+  width: calc(50% - 30px);
 }
 @media screen and (min-width: 768px) {
   .customers__item {
-    -ms-flex-preferred-size: calc(33.3333333333% - 30px);
-        flex-basis: calc(33.3333333333% - 30px);
+    width: calc(33.3333333333% - 30px);
   }
 }
 @media screen and (min-width: 1200px) {
