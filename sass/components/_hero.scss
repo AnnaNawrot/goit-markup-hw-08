@@ -15,23 +15,23 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  @include tablet {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(/goit-markup-hw-08/images/banner/banner-img-tablet-x1.jpg);
-  }
+  // @include tablet {
+  //   background-image: linear-gradient(
+  //       to right,
+  //       rgba(47, 48, 58, 0.4),
+  //       rgba(47, 48, 58, 0.4)
+  //     ),
+  //     url(/goit-markup-hw-08/images/banner/banner-img-tablet-x1.jpg);
+  // }
 
-  @include desktop {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(/goit-markup-hw-08/images/banner/banner-img-desktop-x1.jpg);
-  }
+  // @include desktop {
+  //   background-image: linear-gradient(
+  //       to right,
+  //       rgba(47, 48, 58, 0.4),
+  //       rgba(47, 48, 58, 0.4)
+  //     ),
+  //     url(/goit-markup-hw-08/images/banner/banner-img-desktop-x1.jpg);
+  // }
 
   &__headline {
     font-weight: 900;
@@ -40,7 +40,6 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--third-txt-color);
-    padding-top: 200px;
     margin-bottom: 30px;
   }
 
@@ -60,7 +59,6 @@
     cursor: pointer;
     border-style: none;
     border-radius: 4px;
-    margin-bottom: 200px;
     padding: 10px 41px;
     transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
