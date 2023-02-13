@@ -743,6 +743,11 @@ button {
     margin-top: 12px;
   }
 }
+@media screen and (min-width: 768px) {
+  .footer-socials {
+    margin-top: 12px;
+  }
+}
 
 .socials {
   display: -webkit-box;
@@ -807,6 +812,7 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 12px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -815,7 +821,6 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 0;
   }
 }
 

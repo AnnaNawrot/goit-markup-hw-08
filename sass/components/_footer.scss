@@ -85,6 +85,10 @@
     margin-right: 78px;
     margin-top: 12px;
   }
+
+  @include tablet {
+    margin-top: 12px;
+  }
 }
 
 .socials {
@@ -131,11 +135,11 @@
   @include desktop {
     display: flex;
     flex-direction: column;
+    margin-top: 12px;
   }
 
   @include tablet {
     flex-direction: column;
-    padding-top: 0;
   }
 }
 
