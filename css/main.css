@@ -35,7 +35,6 @@ img {
 
 .container {
   width: 100%;
-  min-width: 480px;
   max-width: 480px;
   margin: 0 auto;
   padding: 0 15px;
@@ -215,7 +214,6 @@ button {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--third-txt-color);
-  padding-top: 200px;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
@@ -235,7 +233,6 @@ button {
   cursor: pointer;
   border-style: none;
   border-radius: 4px;
-  margin-bottom: 200px;
   padding: 10px 41px;
   -webkit-transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -528,11 +525,19 @@ button {
   gap: 30px;
 }
 .customers__item {
-  width: calc(50% - 30px);
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 768px) {
   .customers__item {
-    width: calc(33.3333333333% - 30px);
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 .customers__link {
@@ -553,23 +558,10 @@ button {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.customers__icon {
-  fill: var(--primary-bg-color);
-  -webkit-transition: fill var(--brand-color);
-  transition: fill var(--brand-color);
-}
-.customers__link:hover .customers__icon, .customers__link:focus .customers__icon {
+.customers__link:hover, .customers__link:focus, .customers__link:active {
+  background-color: var(--primary-bg-color);
   fill: var(--brand-color);
-}
-.customers__link:hover, .customers__link:focus {
   border: 1px solid var(--brand-color);
-  border-radius: 4px;
-}
-@media screen and (min-width: 1200px) {
-  .customers {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
 }
 
 .footer {
