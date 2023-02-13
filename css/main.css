@@ -1313,6 +1313,10 @@ textarea {
   color: var(--secondary-txt-color);
 }
 
+.mob-socials {
+  margin-bottom: 48px;
+  background-color: var(--primary-bg-color);
+}
 .mob-socials__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1321,11 +1325,10 @@ textarea {
 }
 .mob-socials__link {
   font-size: 18px;
-  font-weight: 500px;
+  font-weight: 500;
   color: #2196f3;
 }
 .mob-socials__item {
-  margin-bottom: 48px;
   display: inline-block;
 }
 .mob-socials__item:nth-child(1) {

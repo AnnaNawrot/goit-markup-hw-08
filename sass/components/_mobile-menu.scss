@@ -5,7 +5,6 @@
   width: 100vw;
   height: 100vw;
   background-color: #ffff;
-
   z-index: 999;
   display: flex;
   flex-direction: column;
@@ -52,10 +51,6 @@
   width: 100vw;
   margin: 48px 0 0 40px;
   margin-bottom: 306px;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
-  // background-color: var(--primary-bg-color);
   &__item:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -98,6 +93,8 @@
 }
 
 .mob-socials {
+  margin-bottom: 48px;
+  background-color: var(--primary-bg-color);
   &__list {
     display: flex;
     margin-top: 64px;
@@ -105,11 +102,11 @@
 
   &__link {
     font-size: 18px;
-    font-weight: 500px;
+    font-weight: 500;
     color: #2196f3;
   }
   &__item {
-    margin-bottom: 48px;
+    // margin-bottom: 48px;
     display: inline-block;
   }
 
