@@ -6,6 +6,8 @@
   z-index: 1;
   @include tablet {
     min-height: 80px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
   @include desktop {
     min-height: 80px;

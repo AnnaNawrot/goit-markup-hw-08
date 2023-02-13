@@ -4,6 +4,12 @@
   margin-left: 0;
   margin-right: 0;
 
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 15px;
+  }
+
   &__link {
     display: flex;
     align-items: center;
