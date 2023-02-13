@@ -527,6 +527,7 @@ button {
   gap: 30px;
   margin: 0;
   padding: 0;
+  min-width: 480px;
 }
 .customers__item {
   -ms-flex-preferred-size: calc((100% - 30px) / 2);
