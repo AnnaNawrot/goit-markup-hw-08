@@ -12,12 +12,9 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  margin: 0;
-  padding: 0;
-  min-width: 480px;
 
   &__item {
-    flex-basis: calc((100% - 30px) / 2);
+    flex-basis: calc(100% / 2 - 30px);
 
     @include tablet {
       flex-basis: calc(100% / 3 - 30px);
@@ -32,7 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 210px;
+    max-width: 210px;
     height: 92px;
     border: 1px solid var(--icons-bg-color);
     border-radius: 4px;
