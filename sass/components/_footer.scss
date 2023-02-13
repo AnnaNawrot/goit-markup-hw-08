@@ -30,7 +30,7 @@
   @include tablet {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
   }
 
@@ -131,6 +131,11 @@
   @include desktop {
     display: flex;
     flex-direction: column;
+  }
+
+  @include tablet {
+    flex-direction: column;
+    padding-top: 0;
   }
 }
 
