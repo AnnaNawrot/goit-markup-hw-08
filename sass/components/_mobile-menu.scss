@@ -17,10 +17,54 @@
   @include tablet {
     display: none;
   }
+}
 
-  &.is-open {
-    transform: translateX(0);
+.is-open {
+  transform: translateX(0);
+}
+
+.js-close-menu {
+  margin-right: 50.67px;
+  padding: 0;
+  margin-top: 50px;
+  background: transparent;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    fill: var(--brand-color);
   }
+}
+
+.menu-toggle-open {
+  top: 50px;
+  right: -100px;
+  position: absolute;
+  border: none;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  background-color: transparent;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-toggle {
+  top: 21px;
+  right: -105px;
+  position: absolute;
+  border: none;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: fill var(--transition-standard);
+}
+.menu-toggle:is(:hover, :focus) {
+  color: var(--accent-color);
 }
 // .toggle-icon {
 //   position: absolute;
@@ -47,8 +91,7 @@
 // }
 
 .mob-nav {
-  height: 100vw;
-  width: 100vw;
+  height: 100%;
   margin: 48px 0 0 40px;
   margin-bottom: 306px;
   &__item:not(:last-child) {
