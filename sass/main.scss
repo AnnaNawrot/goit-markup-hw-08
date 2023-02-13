@@ -1,4 +1,4 @@
-@import "./utils/mixins";
+@use "./utils/mixins" as *;
 @import "./utils/vars";
 @import "./utils/general";
 @import "./components/header";
