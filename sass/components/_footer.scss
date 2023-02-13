@@ -6,6 +6,10 @@
   flex-wrap: wrap;
   justify-content: center;
 
+  @include desktop {
+    flex-wrap: nowrap;
+  }
+
   &__cta {
     font-weight: 700;
     font-size: 14px;
@@ -75,7 +79,10 @@
   margin-bottom: 60px;
 
   @include desktop {
+    display: flex;
+    align-items: flex-start;
     margin-right: 78px;
+    margin-top: 12px;
   }
 }
 
@@ -119,6 +126,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .subscription {
@@ -126,6 +138,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
   &__item:not(:last-child) {
     margin-bottom: 20px;
   }
