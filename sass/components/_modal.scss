@@ -50,21 +50,20 @@
     justify-content: center;
     align-items: center;
     position: absolute;
+    @include desktop {
+      margin: 8px 8px 765px 490px;
+    }
   }
   &__icon {
     fill: black;
   }
-
-  @include desktop {
-    margin: 8px 8px 765px 490px;
-  }
 }
-// .is-hidden {
-//   pointer-events: none;
-//   visibility: hidden;
-//   opacity: 0;
-//   transform: scale(1.1);
-// }
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(1.1);
+}
 
 .modal-form {
   display: flex;
@@ -147,9 +146,6 @@
     border-radius: 4px;
     margin: auto 164px 40px 164px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    @include desktop {
-    }
   }
 }
 
