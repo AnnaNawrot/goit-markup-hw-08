@@ -19,7 +19,7 @@
 
 .wraper {
   display: block;
-
+  justify-content: center;
   text-align: center;
 
   @include tablet {
@@ -35,9 +35,12 @@
     text-align: left;
   }
 }
+
 .footer-contact {
   margin-bottom: 60px;
-  // margin-right: 70px;
+  @include desktop {
+    margin-right: 70px;
+  }
 }
 
 .footer-contacts {
@@ -65,17 +68,24 @@
 
 // JOIN US - social media
 .footer-socials {
-  margin-bottom: 60px;
   display: flex;
-  margin-right: 78px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+
+  @include desktop {
+    margin-right: 78px;
+  }
 }
 
 .socials {
   display: flex;
+
   justify-content: space-between;
   align-items: center;
   width: 206px;
-  margin-top: 20px;
+
   margin-left: 0;
 
   &__item {
@@ -108,12 +118,14 @@
   padding-top: 12px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .subscription {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   &__item:not(:last-child) {
     margin-bottom: 20px;
   }
