@@ -944,8 +944,8 @@ button {
 .modal {
   position: absolute;
   z-index: 1;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -961,10 +961,20 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
 .modal__button {
   width: 30px;
   height: 30px;
-  margin: 8px 8px 765px 490px;
+  margin: 8px 8px 571px 412px;
   background-color: var(--primary-bg-color);
   border-radius: 50px;
   border: solid rgba(0, 0, 0, 0.1) 1px;
@@ -982,13 +992,10 @@ button {
 .modal__icon {
   fill: black;
 }
-
-.is-hidden {
-  pointer-events: none;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+@media screen and (min-width: 1200px) {
+  .modal {
+    margin: 8px 8px 765px 490px;
+  }
 }
 
 .modal-form {
@@ -999,21 +1006,52 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding-left: 5px;
   padding-right: 5px;
 }
+@media screen and (min-width: 1200px) {
+  .modal-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
 .modal-form__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-txt-color);
   margin-top: 40px;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-txt-color);
+    margin-top: 40px;
+    margin-bottom: 12px;
+  }
 }
 
 .form {
@@ -1041,6 +1079,18 @@ button {
 .form__item:focus-within > textarea {
   border-color: var(--brand-color);
 }
+@media screen and (min-width: 1200px) {
+  .form__item {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--secondary-txt-color);
+  }
+  .form__item:focus-within > textarea {
+    border-color: var(--brand-color);
+  }
+}
 .form__button {
   width: 200px;
   height: 50px;
@@ -1060,9 +1110,8 @@ button {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-row {
-  width: 448px;
+  width: 370px;
   height: 40px;
   margin-top: 4px;
   margin-bottom: 10px;
@@ -1070,6 +1119,14 @@ button {
 .form-row:focus-within > svg, .form-row:focus-within > input {
   fill: var(--brand-color);
   border-color: var(--brand-color);
+}
+@media screen and (min-width: 1200px) {
+  .form-row {
+    width: 448px;
+    height: 40px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+  }
 }
 .form-row__icon {
   position: absolute;
@@ -1095,7 +1152,7 @@ button {
 }
 
 textarea {
-  width: 448px;
+  width: 370px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1113,6 +1170,28 @@ textarea {
   resize: none;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  textarea {
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 12px 16px;
+    resize: none;
+    -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .send-button:focus,
@@ -1135,11 +1214,16 @@ textarea {
 }
 .statement__txt {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-txt-color);
   margin-left: 9px;
+}
+@media screen and (min-width: 1200px) {
+  .statement__txt {
+    font-size: 14px;
+  }
 }
 .statement__checkmark {
   fill: var(--primary-bg-color);

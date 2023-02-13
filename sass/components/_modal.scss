@@ -18,8 +18,8 @@
 .modal {
   position: absolute;
   z-index: 1;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -28,13 +28,21 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
+  @include desktop {
+    width: 528px;
+    height: 581px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   display: flex;
   justify-content: center;
 
   &__button {
     width: 30px;
     height: 30px;
-    margin: 8px 8px 765px 490px;
+    margin: 8px 8px 571px 412px;
     background-color: var(--primary-bg-color);
     border-radius: 50px;
     border: solid rgba(0, 0, 0, 0.1) 1px;
@@ -46,29 +54,55 @@
   &__icon {
     fill: black;
   }
+
+  @include desktop {
+    margin: 8px 8px 765px 490px;
+  }
 }
-.is-hidden {
-  pointer-events: none;
-  visibility: hidden;
-  opacity: 0;
-  transform: scale(1.1);
-}
+// .is-hidden {
+//   pointer-events: none;
+//   visibility: hidden;
+//   opacity: 0;
+//   transform: scale(1.1);
+// }
 
 .modal-form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding-left: 5px;
   padding-right: 5px;
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
   &__title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-txt-color);
     margin-top: 40px;
     margin-bottom: 12px;
+    // width: 345px;
+
+    @include desktop {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.15;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: var(--primary-txt-color);
+      margin-top: 40px;
+      margin-bottom: 12px;
+    }
   }
 }
 
@@ -86,6 +120,17 @@
     &:focus-within > textarea {
       border-color: var(--brand-color);
     }
+
+    @include desktop {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.01em;
+      color: var(--secondary-txt-color);
+      &:focus-within > textarea {
+        border-color: var(--brand-color);
+      }
+    }
   }
   &__button {
     width: 200px;
@@ -102,11 +147,14 @@
     border-radius: 4px;
     margin: auto 164px 40px 164px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include desktop {
+    }
   }
 }
 
 .form-row {
-  width: 448px;
+  width: 370px;
   height: 40px;
   margin-top: 4px;
   margin-bottom: 10px;
@@ -114,6 +162,12 @@
   &:focus-within > input {
     fill: var(--brand-color);
     border-color: var(--brand-color);
+  }
+  @include desktop {
+    width: 448px;
+    height: 40px;
+    margin-top: 4px;
+    margin-bottom: 10px;
   }
 
   &__icon {
@@ -138,7 +192,7 @@
 }
 
 textarea {
-  width: 448px;
+  width: 370px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -151,6 +205,22 @@ textarea {
   padding: 12px 16px;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include desktop {
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .send-button:focus,
@@ -167,11 +237,14 @@ textarea {
 
   &__txt {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-txt-color);
     margin-left: 9px;
+    @include desktop {
+      font-size: 14px;
+    }
   }
   &__checkmark {
     fill: var(--primary-bg-color);
