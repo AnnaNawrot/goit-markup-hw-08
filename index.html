@@ -24,6 +24,21 @@
         <a class="logo header__logo" href="./index.html"
           >Web<span class="logo__part logo__part--header">Studio</span></a
         >
+        <div class="mob-menu js-menu-container" id="mobile-menu">
+          <button
+            type="button"
+            class="menu-toggle-open js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="24" height="16" aria-label="Mobile menu switcher">
+              <use
+                class="menu-toogle_icon-open"
+                href="./images/icons.svg#icon-mob-menu-toogle"
+              ></use>
+            </svg>
+          </button>
+
         <nav>
           <ul class="nav">
             <li class="nav__item menu-active">
@@ -649,11 +664,17 @@
         </div>
       </div>
     </footer>
-    <!-- mobile menu -->
-    <div class="mob-menu js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg class="icon-mobile-close" width="27" height="27">
-          <use href="./images/icons.svg#icon-mob-icon-close"></use>
+    <!-- mobile menu part 2 -->
+    <div class="mob-container js-menu-container" id="mobile-menu">
+      <button
+        type="button"
+        class="menu-toggle-open js-close-menu"
+      >
+        <svg width="24" height="16" aria-label="Mobile menu switcher">
+          <use
+            class="mob-container__icon-mob-close"
+            href="./images/icons.svg#icon-mob-icon-close"
+          ></use>
         </svg>
       </button>
 
