@@ -1,65 +1,125 @@
 .hero {
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
-  max-width: 1600px;
-  text-align: center;
-  background-color: #2f303a;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/goit-markup-hw-08/images/banner/banner-img.jpg);
+    url(/goit-markup-hw-08/images/banner/banner-img-mobile-x1.jpg);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-color: var(--secondary-bg-color);
+  text-align: center;
+  padding: 200px 0px;
+  margin-bottom: 60px;
 
-  @include tablet {
+  @include desktop {
+    margin-bottom: 94px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/goit-markup-hw-08/images/banner/banner-img-mobile-x2.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
       url(/goit-markup-hw-08/images/banner/banner-img-tablet-x1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 118px 0px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(/goit-markup-hw-08/images/banner/banner-img-tablet-x2.jpg);
+    }
   }
-
-  @include desktop {
+  @media screen and (min-width: 1200px) {
+    background-color: var(--secondary-bg-color);
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
       url(/goit-markup-hw-08/images/banner/banner-img-desktop-x1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(/goit-markup-hw-08/images/banner/banner-img-desktop-x2.jpg);
+    }
   }
 
   &__headline {
+    max-width: 365px;
+    text-align: center;
+    color: var(--third-txt-color);
     font-weight: 900;
     font-size: 26px;
     line-height: 1.61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--third-txt-color);
+    margin: 0 auto;
     margin-bottom: 30px;
-  }
 
-  @include desktop {
-    font-size: 44px;
-    line-height: 1.36;
+    @include desktop {
+      font-size: 44px;
+      line-height: 1.36;
+      max-width: 696px;
+    }
   }
-
   &__button {
-    background: var(--brand-color);
-    font-weight: 700;
+    font-family: inherit;
     font-size: 16px;
-    line-height: 1.87;
-    text-align: center;
+    font-weight: 700;
+    line-height: 1.88;
     letter-spacing: 0.06em;
+    text-align: center;
+    // font-family: Roboto;
+    padding: 10px 42px 10px 41px;
     color: var(--third-txt-color);
-    cursor: pointer;
-    border-style: none;
+    background-color: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    padding: 10px 41px;
-    transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    transition: box-shadow var(--secondary-bg-color);
+    cursor: pointer;
+  }
+
+  &__button:hover,
+  &__button:focus {
+    box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    );
   }
 }

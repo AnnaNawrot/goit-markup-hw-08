@@ -183,59 +183,107 @@ button {
 }
 
 .hero {
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
-  max-width: 1600px;
-  text-align: center;
-  background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/goit-markup-hw-08/images/banner/banner-img.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/goit-markup-hw-08/images/banner/banner-img.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/goit-markup-hw-08/images/banner/banner-img-mobile-x1.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/goit-markup-hw-08/images/banner/banner-img-mobile-x1.jpg);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-color: var(--secondary-bg-color);
+  text-align: center;
+  padding: 200px 0px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    margin-bottom: 94px;
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/goit-markup-hw-08/images/banner/banner-img-mobile-x2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/goit-markup-hw-08/images/banner/banner-img-mobile-x2.jpg);
+  }
 }
 @media screen and (min-width: 768px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/goit-markup-hw-08/images/banner/banner-img-tablet-x1.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/goit-markup-hw-08/images/banner/banner-img-tablet-x1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 118px 0px;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/goit-markup-hw-08/images/banner/banner-img-tablet-x2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/goit-markup-hw-08/images/banner/banner-img-tablet-x2.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    background-color: var(--secondary-bg-color);
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/goit-markup-hw-08/images/banner/banner-img-desktop-x1.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/goit-markup-hw-08/images/banner/banner-img-desktop-x1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/goit-markup-hw-08/images/banner/banner-img-desktop-x2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/goit-markup-hw-08/images/banner/banner-img-desktop-x2.jpg);
   }
 }
 .hero__headline {
+  max-width: 365px;
+  text-align: center;
+  color: var(--third-txt-color);
   font-weight: 900;
   font-size: 26px;
   line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--third-txt-color);
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
-  .hero {
+  .hero__headline {
     font-size: 44px;
     line-height: 1.36;
+    max-width: 696px;
   }
 }
 .hero__button {
-  background: var(--brand-color);
-  font-weight: 700;
+  font-family: inherit;
   font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
+  font-weight: 700;
+  line-height: 1.88;
   letter-spacing: 0.06em;
+  text-align: center;
+  padding: 10px 42px 10px 41px;
   color: var(--third-txt-color);
-  cursor: pointer;
-  border-style: none;
+  background-color: #2196f3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  padding: 10px 41px;
-  -webkit-transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  -webkit-transition: -webkit-box-shadow var(--secondary-bg-color);
+  transition: -webkit-box-shadow var(--secondary-bg-color);
+  transition: box-shadow var(--secondary-bg-color);
+  transition: box-shadow var(--secondary-bg-color), -webkit-box-shadow var(--secondary-bg-color);
+  cursor: pointer;
+}
+.hero__button:hover, .hero__button:focus {
+  -webkit-box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.3);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 
 .offer__title {
