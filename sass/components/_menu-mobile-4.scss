@@ -11,13 +11,14 @@
   }
 }
 .menu-toggle-close {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-items: center;
+  //   display: flex;
+  //   flex-direction: row-reverse;
+  //   //   align-items: center;
+  //   justify-content: center;
+  //   align-items: flex-end;
 
   margin-top: 10px;
-  margin-left: 420px;
+  margin-left: -60px;
   padding: 0;
   background-color: transparent;
   cursor: pointer;

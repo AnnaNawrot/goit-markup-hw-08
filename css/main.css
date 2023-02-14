@@ -92,18 +92,8 @@ button {
 }
 
 .menu-toggle-close {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  align-items: center;
   margin-top: 10px;
-  margin-left: 420px;
+  margin-left: -60px;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
