@@ -85,8 +85,8 @@ button {
   height: 100%;
   background-color: var(--primary-bg-color);
   z-index: 999;
-  padding-left: 40px;
-  padding-bottom: 48px;
+  padding-left: 7%;
+  padding-bottom: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,12 +145,11 @@ button {
 }
 .menu-toggle-close {
   margin-top: 10px;
-  margin-left: 15px;
   padding: 0;
   background-color: transparent;
   position: absolute;
   top: 0px;
-  right: 20px;
+  right: 4%;
   cursor: pointer;
   border: none;
   border-radius: 50%;
@@ -167,7 +166,7 @@ button {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  margin-top: 48px;
+  margin-top: 10%;
 }
 .mob-nav__item:not(:last-child) {
   margin-bottom: 32px;
@@ -192,7 +191,7 @@ button {
   display: flex;
 }
 .mob-contact__item:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 10%;
 }
 .mob-contact__item:nth-child(1) .mob-contact__link, .mob-contact__item:nth-child(2) .mob-contact__link {
   font-weight: 500;
