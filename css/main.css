@@ -168,7 +168,7 @@ button {
           transform: translateX(0);
 }
 
-.menu-container .menu-toggle-close {
+.menu-toggle-close {
   position: absolute;
   top: 0px;
   right: 15px;
