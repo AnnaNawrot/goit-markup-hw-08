@@ -711,6 +711,7 @@ button {
 }
 .card__description {
   padding: 30px;
+  border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-bg-color);
 }
 .card__name {
