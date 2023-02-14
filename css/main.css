@@ -173,7 +173,7 @@ button {
   margin-bottom: 32px;
 }
 .mob-nav__list {
-  margin-bottom: 220px;
+  margin-bottom: 150px;
 }
 .mob-nav__link {
   font-size: 40px;
@@ -190,9 +190,6 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-.mob-contact__list {
-  margin-bottom: 64px;
 }
 .mob-contact__item:not(:last-child) {
   margin-bottom: 32px;

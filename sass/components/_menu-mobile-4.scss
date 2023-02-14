@@ -91,7 +91,7 @@
     margin-bottom: 32px;
   }
   &__list {
-    margin-bottom: 220px;
+    margin-bottom: 150px;
   }
   &__link {
     font-size: 40px;
@@ -107,9 +107,9 @@
 
 .mob-contact {
   display: flex;
-  &__list {
-    margin-bottom: 64px;
-  }
+  // &__list {
+  //   margin-bottom: 64px;
+  // }
   &__item:not(:last-child) {
     margin-bottom: 32px;
   }
