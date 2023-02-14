@@ -26,6 +26,7 @@
   border: none;
   border-radius: 50%;
   outline: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (min-width: 768px) {
@@ -60,9 +61,8 @@
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 30px;
+  top: 15px;
   right: 15px;
-  color: pink;
 }
 
 .mobile-menu {
@@ -94,13 +94,12 @@
 }
 
 .mob-contact {
-  margin-top: 302px;
   &__list {
     margin-bottom: 64px;
   }
   &__item {
     margin-left: 40px;
-    margin-bottom: 64px;
+    // margin-bottom: 64px;
   }
   &__item:not(:last-child) {
     margin-bottom: 32px;
@@ -151,6 +150,12 @@
     margin-right: 10px;
     width: 22px;
   }
+}
+
+.mob-bottom-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 // .mobile-menu .link {
 //   display: block;
