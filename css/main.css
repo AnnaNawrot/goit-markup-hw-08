@@ -93,7 +93,7 @@ button {
 
 .menu-toggle-close {
   margin-top: 10px;
-  margin-left: -60px;
+  margin-left: 15px;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
@@ -171,7 +171,7 @@ button {
 .menu-toggle-close {
   position: absolute;
   top: 0px;
-  right: 15px;
+  right: 20px;
 }
 
 .mobile-menu {
