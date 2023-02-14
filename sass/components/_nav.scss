@@ -1,6 +1,15 @@
+.navigation {
+  display: flex;
+
+  @include tablet {
+    align-items: center;
+  }
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
+
   width: 254px;
   margin-left: 93px;
 

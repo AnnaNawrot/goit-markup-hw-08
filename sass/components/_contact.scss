@@ -32,6 +32,14 @@
 
   &__item:not(:last-child) {
     margin-right: 30px;
+
+    @include tablet {
+      margin-bottom: 10px;
+    }
+
+    @include desktop {
+      margin-bottom: 0;
+    }
   }
 
   &__icon {
