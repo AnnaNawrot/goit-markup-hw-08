@@ -157,18 +157,6 @@ button {
   fill: var(--brand-color);
 }
 
-.menu-toggle .mob-icon-close {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .menu-container {
   position: fixed;
   top: 0;
@@ -271,8 +259,8 @@ button {
   border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 8px;
+  margin-right: 4px;
   width: 22px;
 }
 
